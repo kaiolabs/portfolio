@@ -1,0 +1,10 @@
+.box{
+    margin-top: 200px;
+}
+
+.box h1{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}

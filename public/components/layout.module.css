@@ -1,0 +1,16 @@
+.box{
+    min-height: 100vh;
+    background-color: #0C0C0C;
+}
+
+.box main{
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box main svg{
+    font-size: 350px;
+    color: white;
+    
+}

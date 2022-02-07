@@ -1,6 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Navbar from '../public/components/navbar'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
+import { ImLinkedin2 } from 'react-icons/im'
+import { VscGithubAlt } from 'react-icons/vsc'
+import Sobre from '../public/components/sobre'
+
 
 export default function Home() {
   return (
@@ -11,59 +16,42 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <header>
+        <Navbar />
+      </header>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <main>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <section className={styles.box}>
+          <div className={styles.boxText}>
+            <h1>Olá, eu sou o Kaio Vinicius seja bem-vindo(a)</h1>
+            <p>Desenvolvedor Front-End</p>
+            <br />
+            <a href='#' data-Linkedin><ImLinkedin2 /> Linkedin</a>
+            <a href='#' data-Github> <VscGithubAlt /> Github</a>
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <div className={styles.img}>
+            <Image
+              src="/img/soft1.svg"
+              alt="Picture"
+              width={550}
+              height={450}
+            />
+          </div>
+        </section>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section>
+          <div id="Sobre">
+            <Sobre/>
+          </div>
+        </section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer>
+
       </footer>
+
     </div>
   )
 }

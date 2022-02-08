@@ -1,9 +1,9 @@
 import styles from './layout.module.css'
-import Navbar from './NavBar'
 import Image from 'next/image'
 import { ImLinkedin2 } from 'react-icons/im'
 import { VscGithubAlt } from 'react-icons/vsc'
 import Sobre from './sobre'
+import Navbar from './navbar'
 
 export default function Layout() {
     return (

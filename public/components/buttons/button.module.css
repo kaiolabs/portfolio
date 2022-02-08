@@ -1,0 +1,28 @@
+.box a{
+    position: relative;
+    padding: 9px 20px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Sarala', sans-serif;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.box a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #6117a1;
+    transition: all 0.5s;
+}
+
+.box a:hover::before{
+    width: 100%;
+}
+
+

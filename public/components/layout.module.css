@@ -1,16 +1,150 @@
-.box{
-    min-height: 100vh;
-    background-color: #0C0C0C;
-}
-
-.box main{
-    margin: 100px 0 100px 0;
+.container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
-.box main svg{
-    font-size: 350px;
-    color: white;
+.container main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    width: 90%;
+    overflow: hidden;
+    flex-wrap: wrap;
     
+}
+
+.boxText{
+    margin-right: 100px;
+    position: relative;
+    width: auto;
+    animation: textAnimate 2s;
+}
+
+.boxText h1{
+    width: 100%;
+    max-width: 400px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    margin-right: 150px;
+    color: white;
+    margin-bottom: 30px;
+
+}
+
+.boxText p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-right: 150px;
+    color: #828282;
+
+}
+
+.img {
+    position: relative;
+    animation: imgAnimate 2s;
+}
+
+@keyframes textAnimate{
+    from{
+        opacity: 0;
+        left: -650px;
+    }
+
+    to{
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes imgAnimate{
+    from{
+        opacity: 0;
+        left: 580px;
+    }
+
+    to{
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+.boxText [data-linkedin] svg{
+    position: relative;
+    left: -6px;
+    top: 4px;
+    font-size: 1.4em;
+}
+
+.boxText [data-github] svg{
+    position: relative;
+    left: -6px;
+    top: 8px;
+    font-size: 1.4em;
+}
+
+
+.boxText [data-linkedin], .boxText [data-github]{
+    background-color: #6117a1;
+    text-align: center;
+    margin: 20px 30px 0 0;
+    padding: 12px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.boxText a:hover{
+    transition: 1.7s;
+    padding: 12px 60px;
+}
+
+@media (max-width: 1450px){
+    .boxText{
+        margin: 0 auto;
+        margin-bottom: 100px;
+        position: relative;
+        width: auto;
+        animation: textAnimate 2s;
+    }
+
+    .boxText h1{
+        margin: 0;
+    }
+
+    .boxText P{
+        margin: 20px 0 20px 0;
+    }
+
+}
+
+.sobre{
+    margin-top: 120px;
+    margin-bottom: 80px;
 }

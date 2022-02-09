@@ -11,7 +11,7 @@ body {
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: #6117a1 #0C0C0C;
+  scrollbar-color: #8a22e6 #0c0c0c;
 }
 
 *::-webkit-scrollbar {
@@ -23,7 +23,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #6117a1;
+  background-color: #8a22e6;
   border-radius: 20px;
   border: 3px solid #282A35;
 }

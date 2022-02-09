@@ -1,15 +1,17 @@
-.box a{
+.box button{
     position: relative;
-    padding: 9px 20px;
-    margin: 5px;
+    padding: 4px 15px;
+    margin: 7px;
     font-size: 1em;
     font-weight: 600;
     font-family: 'Sarala', sans-serif;
     text-decoration: none;
     color: #ffff;
+    background: none;
+    border: none;
 }
 
-.box a::before{
+.box button::before{
     content: '';
     position: absolute;
     left: 0;
@@ -17,11 +19,11 @@
     width: 0;
     height: 5px;
     border-radius: 15px;
-    background-color: #6117a1;
+    background-color: #8a22e6;
     transition: all 0.5s;
 }
 
-.box a:hover::before{
+.box button:hover::before{
     width: 100%;
 }
 

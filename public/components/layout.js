@@ -2,48 +2,60 @@ import styles from './layout.module.css'
 import Image from 'next/image'
 import { ImLinkedin2 } from 'react-icons/im'
 import { VscGithubAlt } from 'react-icons/vsc'
-import Sobre from './sobre'
 import Navbar from './navbar'
+import { useState } from 'react'
+import Sobre2 from './sobre2'
+import Projetos from './projetos'
 
 export default function Layout() {
-    return (
-        <div  className={styles.container}>
-            <header id="Home">
-                <Navbar/>
-            </header>
 
-            <main>
+  return (
+    <div className={styles.container}>
+
+
+      <header id="Home">
+        <Navbar />
+      </header>
+
+      <main>
 
         <section className={styles.box}>
           <div className={styles.boxText}>
             <h1>Olá, eu sou o Kaio Vinicius seja bem-vindo(a)</h1>
             <p>Desenvolvedor Front-End</p>
             <br />
-            <a href='https://www.linkedin.com/in/kaioviniciusdev' data-linkedin><ImLinkedin2 /> Linkedin</a>
-            <a href='https://github.com/kaiolabs' data-github> <VscGithubAlt /> Github</a>
+            <a href='https://www.linkedin.com/in/kaioviniciusdev'><button data-linkedin><ImLinkedin2 /> Linkedin</button></a>
+            <a href='https://github.com/kaiolabs'><button data-github> <VscGithubAlt /> Github</button></a>
           </div>
 
           <div className={styles.img}>
             <Image
               src="/img/soft1.svg"
               alt="Picture"
-              width={550}
-              height={450}
+              width={500}
+              height={400}
               priority
             />
           </div>
         </section>
 
-        <section className={styles.sobre}>
-          <div id="Sobre">
-            <Sobre/>
+        <section className={styles.sobre} id="Sobre">
+          <div>
+            <Sobre2/>
           </div>
         </section>
+
+        <section className={styles.projetos}>
+          <div id="Projetos">
+            <Projetos/>
+          </div>
+        </section>
+
       </main>
 
-            <footer>
+      <footer>
 
-            </footer>
-        </div>
-    )
+      </footer>
+    </div>
+  )
 } 

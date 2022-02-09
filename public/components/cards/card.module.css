@@ -1,0 +1,27 @@
+.card{
+    background: linear-gradient(#7d3cb6, #8a22e6);
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s;
+    margin: 25px;
+    
+}
+
+.glassCard{
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 15px 30px rgb(0 0 0 / 30%);
+    backdrop-filter: blur(20px);
+
+    padding: 100px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.2 , 1.2);
+}

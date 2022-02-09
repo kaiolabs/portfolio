@@ -1,24 +1,17 @@
 import styles from './navbar.module.css'
 import { ImInfinite } from 'react-icons/im'
 import Button from './buttons/button'
-import { useState } from 'react';
-
+import {useState} from 'react'
 
 export default function Navbar() {
 
-    const [open, setOpen] = useState(false)
+    const [click, setClick] = useState(false)
 
-    const ToggleMode= () =>{
-        setOpen(!open)
-    }
+    const handleClick = () => setClick(!click)
 
     return (
         <div className={styles.box}>
             <a href='#Home'><ImInfinite/></a>
-
-            <div onClick={ToggleMode}>
-                <div className={styles.test}></div>
-            </div>
 
             <div>
                 <nav>
@@ -29,6 +22,9 @@ export default function Navbar() {
                     <Button link="#Conhecimentos" text="Conhecimentos"/>
                 </nav>
                 
+                <div className={styles.navIcon} onClick ={handleClick}>
+
+                </div>
             </div>
         </div>
     )

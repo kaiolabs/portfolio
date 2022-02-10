@@ -1,14 +1,13 @@
 import styles from './sobre.module.css'
-import Image from 'next/dist/client/image'
 import { useEffect, useState } from 'react'
 
-export default function Sobre(){
+export default function Sobre2() {
 
     const [animat, setAnimat] = useState('')
 
     useEffect(() => {
         const intersectionObserver = new IntersectionObserver((entries) => {
-            if(entries.some((entry) => entry.isIntersecting)){
+            if (entries.some((entry) => entry.isIntersecting)) {
                 setAnimat("start");
             }
         });
@@ -16,23 +15,25 @@ export default function Sobre(){
         return () => intersectionObserver.disconnect();
     }, []);
 
-    return(
-        <div className={styles.box} data-image = {animat}>
-
-            <div className={styles.boxText} data-text = {animat}>
-                <h1>Sobre mim</h1>
-                <p>Sou desenvolvedor Front-end júnior. <br/> <br/> Apaixonado por resolver problemas e ajudar as pessoas! Sempre em busca de mais conhecimento e aprimorando cada dia mais as minhas bases, busco sempre ajudar e ensinar outras pessoas é a melhor maneira de evoluir cada vez mais.</p>
+    return (
+        <div className={styles.boxAnime}>
+            <div data-text={animat}>
+                <div className={styles.box}>
+                    <div className={styles.text}>
+                        <div>
+                            <h1>Sobre mim</h1>
+                            <p>
+                                Sou desenvolvedor Front-end júnior <br /> <br />
+                                Apaixonado por resolver problemas e ajudar as pessoas!
+                                Sempre em busca de mais conhecimento e aprimorando
+                                cada dia mais as minhas bases, busco sempre
+                                ajudar e ensinar outras pessoas para mim fazer isso é a melhor maneira de
+                                evoluir cada vez mais
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div className={styles.img} data-image = {animat}>
-                <Image
-                src="/img/soft3.svg"
-                alt="Picture"
-                width={550}
-                height={450}
-                priority
-                />
-          </div>
         </div>
     )
 }

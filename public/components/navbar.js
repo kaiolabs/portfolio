@@ -18,8 +18,8 @@ export default function Navbar() {
                     <Button link="#Home" text="Home"/>
                     <Button link="#Sobre" text="Sobre"/>
                     <Button link="#Projetos" text="Projetos"/>
-                    <Button link="#MinhasSkills" text="Minhas Skills"/>
                     <Button link="#Conhecimentos" text="Conhecimentos"/>
+                    <Button link="#Contato" text="Contato"/>
                 </nav>
                 
                 <div className={styles.navIcon} onClick ={handleClick}>

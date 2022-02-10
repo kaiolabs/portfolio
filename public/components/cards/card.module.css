@@ -1,27 +1,43 @@
-.card{
-    background: linear-gradient(#7d3cb6, #8a22e6);
-    padding: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transition: 0.5s;
-    margin: 25px;
-    
-}
-
 .glassCard{
 
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 5px 15px 30px rgb(0 0 0 / 30%);
-    backdrop-filter: blur(20px);
+    
+    backdrop-filter: blur(50px);
 
-    padding: 100px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    width: 600px;
+    padding: 10px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
-.card:hover{
-    transition: 0.5s;
-    transform: scale(1.2 , 1.2);
+.textBox{
+    width: 50%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.textBox span{
+    margin-left: 5px;
+    color: #9b47e6;
+
+}
+
+.buttons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+   
+.glassCard h2{
+    font-weight: 600;
+    font-size: 1.8em;
 }

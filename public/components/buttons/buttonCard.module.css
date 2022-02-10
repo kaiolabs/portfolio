@@ -1,0 +1,20 @@
+.box button{
+    background-color: white;
+    text-align: center;
+    margin: 0px 30px 10px 0px;
+    padding: 5px 15px 5px 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: none;
+}
+
+.box button:hover{
+    padding: 5px 25px 5px 25px;
+}
+
+

@@ -3,15 +3,14 @@ import Image from 'next/image'
 import { ImLinkedin2 } from 'react-icons/im'
 import { VscGithubAlt } from 'react-icons/vsc'
 import Navbar from './navbar'
-import { useState } from 'react'
-import Sobre2 from './sobre2'
+import Sobre from './sobre'
 import Projetos from './projetos'
+import Conhecimentos from './conhecimentos'
 
 export default function Layout() {
 
   return (
     <div className={styles.container}>
-
 
       <header id="Home">
         <Navbar />
@@ -41,13 +40,19 @@ export default function Layout() {
 
         <section className={styles.sobre} id="Sobre">
           <div>
-            <Sobre2/>
+            <Sobre/>
           </div>
         </section>
 
         <section className={styles.projetos}>
           <div id="Projetos">
             <Projetos/>
+          </div>
+        </section>
+
+        <section className={styles.conhecimentos}>
+          <div id="Conhecimentos">
+            <Conhecimentos/>
           </div>
         </section>
 

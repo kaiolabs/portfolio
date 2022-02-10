@@ -1,5 +1,5 @@
 .box{
-    padding-top: 30px;
+    padding-top: 50px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -8,16 +8,23 @@
     color: white;
     width: 100%;
     
-    
+}
+
+.box hr{
+    width: 20%;
+    height: 2px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    background-color: white;
 }
 
 .box h1{
     font-weight: 600;
-    font-size: 3em;
+    font-size: 2.8em;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 5px;
 
 }
 
@@ -25,4 +32,5 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }

@@ -59,7 +59,7 @@
     font-size: 1.2em;
     font-weight: 300;
     margin-right: 150px;
-    color: #828282;
+    color: #9b47e6;
 
 }
 
@@ -152,5 +152,11 @@
 }
 
 .projetos{
+    width: 100%;
     margin-top: 150px;
+}
+
+.conhecimentos{
+    width: 100%;
+    margin-top: 50px;
 }

@@ -32,13 +32,28 @@ export default function Conhecimentos (){
                     <VscGithub/>
                 </div>
                 <div className={styles.card}>
-                    <Image src="/img/python.svg" alt="python" width={80} height={80} />
-                </div>
-                <div className={styles.card}>
                     <Image src="/img/nodejs.svg" alt="nodejs" width={80} height={80} />
                 </div>
                 <div className={styles.card}>
-                    <Image src="/img/styledComponent.png" alt="nodejs" width={80} height={80} />
+                    <Image src="/img/npm.svg" alt="npm" width={80} height={80} />
+                </div>
+                <div className={styles.card}>
+                    <Image src="/img/python.svg" alt="python" width={80} height={80} />
+                </div>
+                <div className={styles.card}>
+                    <Image src="/img/figma.svg" alt="figma" width={80} height={80} />
+                </div>
+                <div className={styles.card}>
+                    <Image src="/img/canva.svg" alt="canva" width={80} height={80} />
+                </div>
+                <div className={styles.card}>
+                    <Image src="/img/styledComponent.png" alt="styledComponent" width={80} height={80} />
+                </div>
+                <div className={styles.card}>
+                    <Image src="/img/c.svg" alt="c" width={80} height={80} />
+                </div>
+                <div className={styles.card}>
+                    <Image src="/img/vscode.svg" alt="vscode" width={80} height={80} />
                 </div>
             </div>
         </div>

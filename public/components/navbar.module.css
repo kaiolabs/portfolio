@@ -46,6 +46,15 @@
 }
 
 
-@media (max-width: 900px){
-   
+@media (min-width: 300px) and (max-width: 510px){
+
+   .box nav{
+       opacity: 0;
+
+   }
+
+   .box a {
+       position: absolute;
+       left: 40%;
+    }
 }

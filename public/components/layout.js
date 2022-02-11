@@ -6,6 +6,7 @@ import Navbar from './navbar'
 import Sobre from './sobre'
 import Projetos from './projetos'
 import Conhecimentos from './conhecimentos'
+import Contato from './contato'
 
 export default function Layout() {
 
@@ -56,11 +57,20 @@ export default function Layout() {
           </div>
         </section>
 
+        <section className={styles.contato}>
+          <div id="Contato">
+            <Contato/>
+          </div>
+        </section>
+
       </main>
 
       <footer>
-
+        <div className={styles.wave}>
+        
+        </div>
       </footer>
+      
     </div>
   )
 } 

@@ -1,7 +1,6 @@
 .container{
     overflow: hidden;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -29,8 +28,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin-top: 80px;
-    width: 90%;
+    width: 80%;
     overflow: hidden;
     flex-wrap: wrap;
     
@@ -118,7 +118,7 @@
     font-weight: 500;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 9px;
     transition: 0.5s;
     border: none;
 }
@@ -160,3 +160,118 @@
     width: 100%;
     margin-top: 50px;
 }
+
+.contato{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 220px;
+}
+
+.container footer{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/wave.png');
+    animation: animate 10s linear infinite;
+}
+
+.wave::before{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background-image: url('../img/wave.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+
+}
+
+
+.wave::after{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background-image: url('../img/wave.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: animate-reverse 20s linear infinite;
+
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+
+    100%{
+        background-position: 1360px;
+    }
+}
+
+@keyframes animate-reverse{
+    0%{
+        background-position: 1360px;
+    }
+
+    100%{
+        background-position: 0;
+    }
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 510px){
+
+    .boxText{
+
+        animation: textAnimate 2s;
+        margin-top: -50px;
+    }
+
+    .boxText h1{
+        width: 100%;
+        max-width: 400px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1.8em;
+        font-weight: 800;
+        margin-right: 150px;
+        color: white;
+        margin-bottom: 30px;
+    
+    }
+    
+    .boxText p{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1.2em;
+        font-weight: 300;
+        color: #9b47e6;
+    
+    }
+
+    .img {
+        margin-bottom: 40px;
+        margin-top: 90px;
+        width: 100%;
+        position: relative;
+        animation: imgAnimate 2s;
+    }
+    
+ }

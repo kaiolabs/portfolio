@@ -44,10 +44,10 @@ export default function Conhecimentos (){
                     <Image src="/img/figma.svg" alt="figma" width={80} height={80} />
                 </div>
                 <div className={styles.card}>
-                    <Image src="/img/canva.svg" alt="canva" width={80} height={80} />
+                    <Image src="/img/styledComponent.png" alt="styledComponent" width={80} height={80} />
                 </div>
                 <div className={styles.card}>
-                    <Image src="/img/styledComponent.png" alt="styledComponent" width={80} height={80} />
+                    <Image src="/img/canva.svg" alt="canva" width={80} height={80} />
                 </div>
                 <div className={styles.card}>
                     <Image src="/img/c.svg" alt="c" width={80} height={80} />

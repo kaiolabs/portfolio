@@ -23,7 +23,7 @@ export default function Sobre2() {
                         <div>
                             <h1>Sobre mim</h1>
                             <p>
-                                Sou desenvolvedor Front-end júnior <br /> <br />
+                                Sou desenvolvedor Front-end, atualmente cursando Engenharia  de Computação. <br /> <br />
                                 Apaixonado por resolver problemas e ajudar as pessoas!
                                 Sempre em busca de mais conhecimento e aprimorando
                                 cada dia mais as minhas bases, busco sempre

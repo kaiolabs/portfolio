@@ -99,3 +99,64 @@
     animation-timing-function: ease;
     transform: translate3d(0, 0, 0);
    }
+
+
+
+@media (min-width: 300px) and (max-width: 510px){
+
+    .box{
+        position: relative;
+        top: 50%;
+        bottom: -295px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 650px;
+        transform-style: preserve-3d;
+        transition: 0.5s;
+    }
+
+    .box .text{
+    
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background: linear-gradient(#781fc5, #8f4fc7);
+        width: calc(100% + 60px);
+        height: calc(100% - 60px);
+        transition: 0.5s;
+    }
+
+    .text div{
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        padding: 5px 60px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .text div h1{
+        margin: 0;
+        font-weight: 600;
+        font-size: 2.3em;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 800;
+        color: white;
+    
+    }
+    
+    .text div p{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1.3em;
+        font-weight: 300;
+        color: white;
+    
+    }
+
+}

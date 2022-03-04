@@ -240,6 +240,7 @@
 
 @media (min-width: 300px) and (max-width: 510px){
 
+
     .boxText{
 
         animation: textAnimate 2s;
@@ -248,9 +249,9 @@
 
     .boxText h1{
         width: 100%;
-        max-width: 400px;
         font-family: 'DM Sans', sans-serif;
-        font-size: 1.8em;
+        font-size: 1.5em;
+        line-height: 140%;
         font-weight: 800;
         margin-right: 150px;
         color: white;
@@ -263,6 +264,7 @@
         font-size: 1.2em;
         font-weight: 300;
         color: #9b47e6;
+        margin-bottom: 20px;
     
     }
 
@@ -272,6 +274,21 @@
         width: 100%;
         position: relative;
         animation: imgAnimate 2s;
+    }
+
+    .boxText [data-linkedin], .boxText [data-github]{
+        background-color: #6e1bb6;
+        text-align: center;
+        margin: 10px 30px 0px 0px;
+        padding: 5px 22px 10px 22px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        border-radius: 9px;
+        transition: 0.5s;
+        border: none;
     }
     
  }
